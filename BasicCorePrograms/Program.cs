@@ -7,7 +7,7 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Please enter option given below");
-            Console.WriteLine("1:FlipCoin\n2:LeapYear\n3:PowerOf2\n4:Harmonic Number\n5:PrimeFactors\n6:QuotientRemainder\n7:SwapNumber\n8:CheckEvenOdd\n9:Check Alphabet");
+            Console.WriteLine("1:FlipCoin\n2:LeapYear\n3:PowerOf2\n4:Harmonic Number\n5:PrimeFactors\n6:QuotientRemainder\n7:SwapNumber\n8:CheckEvenOdd\n9:Check Alphabet\n10:Check Largest Number");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -47,6 +47,10 @@ namespace BasicCorePrograms
 
                     case 9:
                     CheckAlphabet.Alphabet();
+                    break;
+
+                    case 10:
+                    CheckLargestNumber.Number();
                     break;
             }
         }
