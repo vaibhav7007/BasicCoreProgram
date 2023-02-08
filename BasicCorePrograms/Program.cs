@@ -7,7 +7,7 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Please enter option given below");
-            Console.WriteLine("1:FlipCoin\n2:LeapYear\n3:PowerOf2\n4:Harmonic Number");
+            Console.WriteLine("1:FlipCoin\n2:LeapYear\n3:PowerOf2\n4:Harmonic Number\n5:PrimeFactors");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -27,6 +27,10 @@ namespace BasicCorePrograms
 
                     case 4:
                     HarmonicNumber.Number();
+                    break;
+
+                    case 5:
+                    PrimeFactors.Number();
                     break;
             }
         }
