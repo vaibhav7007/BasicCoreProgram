@@ -7,7 +7,7 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Please enter option given below");
-            Console.WriteLine("1:FlipCoin\n2:LeapYear\n3:PowerOf2\n4:Harmonic Number\n5:PrimeFactors");
+            Console.WriteLine("1:FlipCoin\n2:LeapYear\n3:PowerOf2\n4:Harmonic Number\n5:PrimeFactors\n6:QuotientRemainder");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -31,6 +31,10 @@ namespace BasicCorePrograms
 
                     case 5:
                     PrimeFactors.Number();
+                    break;
+
+                    case 6:
+                    QuotientRemainder.Value();
                     break;
             }
         }
